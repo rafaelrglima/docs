@@ -149,3 +149,16 @@ $('select').select2({
   }
 });
 ```
+
+
+## Add custom parameter back to newly created options for remote select2 where we dont have the data yet.
+
+
+
+```
+    $('select[name="fieldname"]').append(new Option("Georgia", "GA", true, true))
+    .select2('data')[0].customdata = { name: "Rafael Lima" };
+```
+    
+    
+
